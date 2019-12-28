@@ -1,0 +1,16 @@
+.main-navigation {
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+  }
+}
+
+.menu-main-menu-container ul li {
+  @include desktop {
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+}

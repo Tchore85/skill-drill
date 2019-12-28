@@ -13,6 +13,10 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+
 	<?php wp_head(); ?>
 	</head>
 
@@ -31,5 +35,22 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
+
+
+
+			<?php 
+		
+							if(is_front_page()){
+								if ( has_post_thumbnail() ) { ?>
+
+									<section class="branka" style=" height: 100vh;
+									background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+									
+									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
+
+								</section>
+								<?php
+								}
+							}?>
 
 			<div id="content" class="site-content">

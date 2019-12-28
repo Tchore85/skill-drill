@@ -465,7 +465,8 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
 
 /* Small menu. */
 .menu-toggle,
@@ -670,3 +671,79 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+@media (min-width: 480px) {
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase; } }
+
+@media (min-width: 480px) {
+  .menu-main-menu-container ul li {
+    width: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.dark-wood {
+  background-color: black; }
+
+.dark-wood {
+  background-image: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px; }
+
+.footer-blocks-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  height: 18rem;
+  padding-top: 2rem; }
+
+.text-footer h3 {
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: 'Novocento Sans Web', sans-serif;
+  font-size: 1rem; }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 1.5rem 0; }
+
+.a-footer a {
+  color: white;
+  font-style: normal;
+  font-family: 'Merriweather Web', serif; }
+
+.numerro-uno {
+  color: white; }
+
+.text-logo {
+  padding-top: 2rem;
+  width: 17rem; }
+
+@media (min-width: 480px) {
+  .icons-wrapper {
+    font-size: 1.5rem; } }
+
+.icons-wrapper a {
+  color: white;
+  font-size: 2rem; }
