@@ -34,7 +34,7 @@ get_header(); ?>
 
 
 			<section class="canoe-girl-nature">
-          <div class="description-grid"><h2> Get Ready</h2></div>
+          <div class="description-grid"><h2> Latest Informations</h2></div>
             <div class="grid-container-nature">
 
                   <div class="canoe-girl">

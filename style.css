@@ -298,15 +298,27 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
+body {
+  font-family: 'Merriweather Web', serif; }
+
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -326,16 +338,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -779,8 +796,11 @@ fieldset {
   background-color: black; }
 
 .dark-wood {
-  background-image: url(../../images/dark-wood@2x.png);
-  background-size: 512px 512px; }
+  background-image: url(../../images/wood5.jpg);
+  width: 100%;
+  height: 250%;
+  background-size: cover;
+  background-position: 50% 100%; }
 
 .footer-blocks-container {
   display: -webkit-box;
@@ -798,7 +818,13 @@ fieldset {
   font-family: 'Novocento Sans Web', sans-serif;
   font-size: 1rem; }
 
+.day-of-week {
+  font-weight: 700; }
+  .day-of-week p {
+    font-family: 'Merriweather Web', serif; }
+
 .copyright {
+  font-family: 'Merriweather Web', serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,3 +957,19 @@ button {
   font-family: 'Novecento Sans Web', sans-serif;
   font-size: 45px;
   font-weight: 700; }
+
+.page-about .entry-content {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2rem; }
+
+.page-about h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem; }

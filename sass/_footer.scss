@@ -3,8 +3,13 @@
 }
 
 .dark-wood {
-  background-image: url(../../images/dark-wood@2x.png);
-  background-size: 512px 512px;
+  background-image: url(../../images/wood5.jpg);
+  // background-size: 512px 512px;
+  width: 100%;
+  height: 250%;
+  // object-fit: cover;
+  background-size: cover;
+  background-position: 50% 100%;
 }
 
 .footer-blocks-container {
@@ -21,7 +26,15 @@
   font-size: 1rem;
 }
 
+.day-of-week {
+  font-weight: 700;
+  p {
+    font-family: 'Merriweather Web', serif;
+  }
+}
+
 .copyright {
+  font-family: 'Merriweather Web', serif;
   display: flex;
   justify-content: center;
   text-transform: uppercase;

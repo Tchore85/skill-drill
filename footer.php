@@ -51,7 +51,7 @@
 </div>
 
 <div class="footer-block-item">
-<div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/logo-skill.png">
+<!-- <div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/logo-skill.png"> -->
 </div>
 </div>
 </div>
