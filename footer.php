@@ -41,11 +41,11 @@
 			<div class="footer-block-item">
 <div class="bussiness-hours">
 <div class=text-footer>
-<h3>Business Hours</h3>
+<h3>Training Hours</h3>
 </div>
-<p><span class="day-of-week">Monday-Friday:</span> 9am to 5pm</p>
-<p><span class="day-of-week">Saturday:</span> 10am to 2pm</p>
-<p><span class="day-of-week">Sunday:</span> Closed</p>
+<p><span class="day-of-week">Tuesday:</span> 7:30 Uhr to 9:15 Uhr</p>
+<p><span class="day-of-week">Friday:</span> 8:00 Uhr to 9:15 Uhr </p>
+
 
 </div>
 </div>

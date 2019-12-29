@@ -33,6 +33,11 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					<div class="only_searchform">
+								<?php get_search_form();?> 
+					</div>	
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
@@ -52,5 +57,28 @@
 								<?php
 								}
 							}?>
+
+
+							<?php 
+								
+								if(is_page('about')){
+									if ( has_post_thumbnail() ) { ?>
+									<section class="about-hero" style="height: 100vh; 
+									background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover; background-position:50% 100%;"> >
+
+
+										<div class="logo-full">
+										
+										<h3><?php the_title(); ?></h3>	
+
+										</div>
+									</section>
+									<?php 
+									}
+								}
+								?>
+
+
 
 			<div id="content" class="site-content">
