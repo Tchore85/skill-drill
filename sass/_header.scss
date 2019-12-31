@@ -28,6 +28,10 @@
   box-shadow: none;
   text-shadow: none;
   line-height: unset;
+  &:hover {
+    cursor: text !important;
+    color: None !important;
+  }
 }
 
 .icon-search {
@@ -36,6 +40,8 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  @include desktop {
+  }
 }
 
 .site-header .search-field {
@@ -45,6 +51,6 @@
 
 fieldset {
   border: none;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   padding-right: 1rem;
 }

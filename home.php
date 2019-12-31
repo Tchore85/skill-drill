@@ -5,36 +5,99 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+				get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+					<div id="primary" class="content-area">
 
-		<?php if ( have_posts() ) : ?>
+						<main id="main" class="site-main page-journal-hockey" role="main">
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+						<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+							<?php if ( is_home() && ! is_front_page() ) : ?>
+								<header>
+								
+									<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
+								</header>
+							<?php endif; ?>
 
-			<?php the_posts_navigation(); ?>
+							<?php /* Start the Loop */ ?>
+							<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+				<header class="entry-header journal-header">
+
+
+                    <div class ="boss-color-journal">
+
+                         <div class="journal-hockey-text">
+
+                            <?php the_title( sprintf( '<h2 class="entry-title journal-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                </div>
+
+                                <div class="journal-hockey-picture">
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <?php the_post_thumbnail( 'large' ); ?>
+                                    <?php endif; ?>
+                                 </div>
+
+                                    <?php if ( 'post' === get_post_type() ) : ?>
+                            
+                            
+                            <?php endif; ?>
+                        </div>                         
+                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <?php the_excerpt(); ?>
+                                    </div><!-- .entry-content -->
+                                </article><!-- #post-## -->
+
+
+												<?php endwhile; ?>
+
+												<?php the_posts_navigation(); ?>
+
+											<?php else : ?>
+
+												<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+											<?php endif; ?>
+
+													<!-- THIS IS THE LOOP FOR CUSTOM FIELD POST -->
+													<?php
+									
+									if( have_rows('training') ):   ?>
+
+							<div class="training-main">						
+
+										<?php	while ( have_rows('training' ) ) : the_row();?>
+
+								<div class="training-about">
+
+
+								<div class ="training-title-vs-info">
+												<div class="training-title"> <h3><?php  the_sub_field('training_title');?> </h3></div>
+																
+									</div>
+
+										<img class="training-img" src="<?php the_sub_field('training_image'); ?>"/>
+
+										<div class="training-info"> <h5><?php  the_sub_field('training_description');?> </h5></div>									
+											<?php endwhile;?>
+
+							</div>
+											<?php else : endif; ?>
+
+
+																	</main><!-- #main -->
+																</div><!-- #primary -->
+
+
+						
+									<?php get_footer(); ?>

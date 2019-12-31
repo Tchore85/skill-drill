@@ -1,0 +1,32 @@
+.training-img {
+  @include desktop {
+    width: 791px;
+  }
+}
+
+.blog {
+  .menu-main-menu-container li a {
+    color: black;
+  }
+}
+.blog {
+  .fa-search {
+    color: black;
+  }
+}
+.training-title-vs-info {
+  position: absolute;
+}
+
+.journal-entry-title a {
+  position: absolute;
+  text-decoration: none;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  margin-top: 2rem;
+  font-size: 2.1rem;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  @include desktop {
+    width: 25rem;
+  }
+}

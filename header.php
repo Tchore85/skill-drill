@@ -35,13 +35,12 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 					<div class="only_searchform">
+
 								<?php get_search_form();?> 
 					</div>	
 
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-
-
 
 			<?php 
 		
@@ -65,7 +64,7 @@
 									if ( has_post_thumbnail() ) { ?>
 									<section class="about-hero" style="height: 100vh; 
 									background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
-									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover; background-position:50% 100%;"> >
+									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover; background-position:50% 100%;"> 
 
 
 										<div class="logo-full">
