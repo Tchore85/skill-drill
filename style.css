@@ -635,6 +635,24 @@ textarea {
 .widget_search .search-submit {
   display: none; }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni'; }
+
+.journal-selection {
+  grid-area: journal-selection; }
+
+.sidebar-uni {
+  grid-area: Sidebar-uni;
+  border-left: 1px solid #e1e1e1;
+  margin-top: 3rem;
+  margin-left: -4rem; }
+
+.sidebar-uni a {
+  font-family: 'Merriweather Web', serif; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

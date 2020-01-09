@@ -7,6 +7,9 @@
 
 				get_header(); ?>
 
+		<div class="grid-container">
+			<div class="journal-selection">
+
 					<div id="primary" class="content-area">
 
 						<main id="main" class="site-main page-journal-hockey" role="main">
@@ -93,11 +96,22 @@
 
 							</div>
 											<?php else : endif; ?>
+				
+				
+										</main><!-- #main -->
+									</div><!-- #primary -->
+
+	<!-- CLOSING DIV FOR GRID JOURNAL SELECTION -->
+								</div> 
 
 
-																	</main><!-- #main -->
-																</div><!-- #primary -->
+									<div class="sidebar-uni">
 
+										<?php get_sidebar(); ?>
+							</div>
 
-						
-									<?php get_footer(); ?>
+							<!-- CLOSING DIV FOR WHOLE GRID -->
+							</div>
+								
+
+						<?php get_footer(); ?>
