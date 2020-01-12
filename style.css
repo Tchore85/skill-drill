@@ -393,12 +393,37 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul,
 ol {
   margin: 0 0 1.5rem 3rem; }
 
-ul {
-  list-style: disc; }
+.textwidget h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px; }
+
+.tent-bizz-hours-class h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px; }
+
+.blog ul {
+  margin: unset;
+  padding-left: 0rem;
+  list-style: none; }
+
+.tribe-events-list-widget h2 {
+  letter-spacing: 2px; }
+
+.tribe-events-list-widget {
+  padding-left: 0rem; }
+  .tribe-events-list-widget .tribe-list-widget {
+    padding-left: 0rem; }
+    .tribe-events-list-widget .tribe-list-widget li {
+      padding: 0rem; }
+
+.tribe-event-title a {
+  font-size: 1.5rem;
+  text-decoration: none; }
 
 ol {
   list-style: decimal; }
@@ -626,10 +651,14 @@ textarea {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.blog .widget-title ul {
+  margin: unset;
+  padding-left: 0rem;
+  list-style: disc; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -642,7 +671,11 @@ textarea {
   grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni'; }
 
 .journal-selection {
-  grid-area: journal-selection; }
+  grid-area: journal-selection;
+  margin: 3rem auto auto auto; }
+
+.single-post .journal-selection {
+  margin: 4.5rem auto auto auto; }
 
 .sidebar-uni {
   grid-area: Sidebar-uni;
@@ -651,7 +684,34 @@ textarea {
   margin-left: -4rem; }
 
 .sidebar-uni a {
-  font-family: 'Merriweather Web', serif; }
+  font-family: 'Merriweather Web', serif;
+  color: #647874; }
+
+.sidebar-uni .widget-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: inherit;
+  margin-left: 3rem; }
+
+.main-journal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 480px) {
+    .main-journal-section {
+      max-width: 800px; } }
+
+.entry-content-journal p {
+  max-width: 791px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -995,27 +1055,55 @@ button {
           justify-content: center;
   font-size: 2rem; }
 
+.blog .main-navigation,
+.single-post .main-navigation {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  height: 3rem; }
+
 @media (min-width: 480px) {
-  .training-img {
+  .journal-hockey-picture img {
     width: 791px; } }
 
-.blog .menu-main-menu-container li a {
-  color: black; }
+.blog .menu-main-menu-container li a,
+.single-post .menu-main-menu-container li a {
+  color: #647874; }
 
-.blog .fa-search {
-  color: black; }
+.blog .fa-search,
+.single-post .fa-search {
+  color: #647874; }
 
 .training-title-vs-info {
   position: absolute; }
 
-.journal-entry-title a {
+.journal-entry-title a,
+.journal-single-entry-title {
   position: absolute;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #647874;
   margin-top: 2rem;
   font-size: 2.1rem;
   color: white;
   padding: 0.75rem 1.5rem; }
   @media (min-width: 480px) {
-    .journal-entry-title a {
+    .journal-entry-title a,
+    .journal-single-entry-title {
       width: 25rem; } }
+
+.button-journal {
+  color: black; }
+
+.journal_page_button {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .journal_page_button a {
+    border: solid 1px #647874;
+    text-transform: capitalize;
+    color: #647874;
+    text-decoration: none; }
+    .journal_page_button a:hover {
+      background-color: #647874;
+      color: white; }
+    @media (min-width: 480px) {
+      .journal_page_button a {
+        padding: 0.5rem; } }

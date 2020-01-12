@@ -35,13 +35,48 @@ hr {
   margin-bottom: $base__space-unit;
 }
 
-ul,
+// ul,
 ol {
   margin: 0 0 $base__space-unit ($base__space-unit * 2);
 }
 
-ul {
-  list-style: disc;
+.textwidget h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.tent-bizz-hours-class h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.blog {
+  ul {
+    margin: unset;
+    padding-left: 0rem;
+    list-style: none;
+  }
+}
+.tribe-events-list-widget h2 {
+  letter-spacing: 2px;
+}
+
+.tribe-events-list-widget {
+  padding-left: 0rem;
+
+  .tribe-list-widget {
+    padding-left: 0rem;
+    li {
+      padding: 0rem;
+    }
+  }
+}
+
+.tribe-event-title a {
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 ol {

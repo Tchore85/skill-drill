@@ -3,11 +3,18 @@
 --------------------------------------------------------------*/
 
 .widget {
-  margin: 0 0 $base__space-unit;
+  // margin: 0 0 $base__space-unit;
 
   /* Make sure select elements fit in widgets. */
   select {
     max-width: 100%;
+  }
+}
+.blog {
+  .widget-title ul {
+    margin: unset;
+    padding-left: 0rem;
+    list-style: disc;
   }
 }
 
@@ -27,17 +34,54 @@
 
 .journal-selection {
   grid-area: journal-selection;
+
+  margin: 3rem auto auto auto;
+}
+
+.single-post {
+  .journal-selection {
+    margin: 4.5rem auto auto auto;
+  }
 }
 
 .sidebar-uni {
   grid-area: Sidebar-uni;
   border-left: 1px solid #e1e1e1;
   margin-top: 3rem;
-
   margin-left: -4rem;
 }
 .sidebar-uni {
   a {
     font-family: 'Merriweather Web', serif;
+    color: #647874;
   }
 }
+.sidebar-uni {
+  .widget-area {
+    display: flex;
+    flex-direction: column;
+    text-align: inherit;
+    margin-left: 3rem;
+  }
+}
+.main-journal-section {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    max-width: 800px;
+  }
+}
+.entry-content-journal p {
+  max-width: 791px;
+}
+
+//THIS IS TO CENTER WIDGET SIDEBARS SEPARATELY
+
+// .widget_custom_html,
+// .tent-bizz-hours-class,
+// .tribe-events-list-widget {
+//   @include desktop {
+//     margin: auto;
+//   }
+// }

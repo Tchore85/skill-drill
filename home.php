@@ -29,11 +29,12 @@
 							<?php while ( have_posts() ) : the_post(); ?>
 
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-" class="main-journal-section" <?php the_ID(); ?>" <?php post_class(); ?>>
 
 
 
 				<header class="entry-header journal-header">
+
 
 
                     <div class ="boss-color-journal">
@@ -56,8 +57,15 @@
                         </div>                         
                     </header><!-- .entry-header -->
 
-                                    <div class="entry-content">
-                                        <?php the_excerpt(); ?>
+                                    <div class="entry-content-journal">
+										<?php the_excerpt(); ?>              
+										 <div class="journal_page_button">
+                                  <a href="<?php echo get_the_permalink(); ?>">Read More --></a>
+                                
+
+                                  <!-- get_the_permalink() -->
+
+                                              </div>
                                     </div><!-- .entry-content -->
                                 </article><!-- #post-## -->
 

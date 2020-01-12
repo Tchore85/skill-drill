@@ -1,32 +1,69 @@
-.training-img {
+.blog,
+.single-post {
+  .main-navigation {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    border-bottom: 1px solid #e1e1e1;
+    height: 3rem;
+  }
+}
+
+.journal-hockey-picture img {
   @include desktop {
     width: 791px;
   }
 }
 
-.blog {
+.blog,
+.single-post {
   .menu-main-menu-container li a {
-    color: black;
+    color: #647874;
   }
 }
-.blog {
+.blog,
+.single-post {
   .fa-search {
-    color: black;
+    color: #647874;
   }
 }
 .training-title-vs-info {
   position: absolute;
 }
 
-.journal-entry-title a {
+.journal-entry-title a,
+.journal-single-entry-title {
   position: absolute;
   text-decoration: none;
-  background-color: hsla(0, 0%, 100%, 0.25);
+  // background-color: hsla(0, 0%, 100%, 0.25);
+  background-color: #647874;
   margin-top: 2rem;
   font-size: 2.1rem;
   color: white;
   padding: 0.75rem 1.5rem;
   @include desktop {
     width: 25rem;
+  }
+}
+
+.button-journal {
+  color: black;
+}
+
+.journal_page_button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  a {
+    border: solid 1px #647874;
+    // background-color: #647874;
+    text-transform: capitalize;
+    color: #647874;
+    text-decoration: none;
+    &:hover {
+      background-color: #647874;
+      color: white;
+    }
+    @include desktop {
+      padding: 0.5rem;
+    }
   }
 }
