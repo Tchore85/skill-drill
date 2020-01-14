@@ -26,12 +26,13 @@
 //THIS IS THE SIDEBAR
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni';
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni';
+  }
 }
-
 .journal-selection {
   grid-area: journal-selection;
 
@@ -65,11 +66,12 @@
   }
 }
 .main-journal-section {
-  display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 
   @include desktop {
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .entry-content-journal p {

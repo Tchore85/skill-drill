@@ -31,7 +31,55 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+<!-- THIS IS THE BEGINNIGN OF THE LOOP FROM JOURNAL -->
 
+
+<section class="selected-posts">
+                      <h2>Unsere Programme</h2>
+                            <div class ="selected-posts-front-page">
+                                                  
+                                <?php
+                                  $args = array( 'post_type' => 'post','posts_per_page' => 3, 'order' => 'DESC' );
+                                  $journal_posts = get_posts( $args ); // returns an array of posts
+                                  ?>
+                                 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+                          <article class="post">
+                                          
+                                    <div class="post-image">
+                                     <?php the_post_thumbnail();?>
+                                      </div>
+                                <div class ="post-info-wrapper">
+                                        <div class ="post-date">
+                                          <!-- <?php the_date();?> -->
+                                        </div>
+
+                                         <div class="post-title">
+                                              <?php the_title();?>
+                                          </div>
+                                            
+                                  </div>
+                                              
+                                <div class="front_page_button">
+                                  <a href="<?php echo get_the_permalink(); ?>">Read More</a>
+                                
+
+                                  <!-- get_the_permalink() -->
+
+                                              </div>
+                                              
+                            </article>
+
+   
+
+                              <?php //echo get_the_date();?> 
+                              <!-- this is longer version echo will display but if we have only get_the_date
+                            we will get only the data but not displayed -->
+                            <?php endforeach; wp_reset_postdata(); ?>
+
+                    </div>
+      </section>
+
+      <!-- THIS IS THE END OF THE LOOP FOR JOURNAL POSTS -->
 
 			<section class="canoe-girl-nature">
           <div class="description-grid"><h2> Latest Informations</h2></div>
