@@ -935,6 +935,7 @@ fieldset {
     font-size: 1.5rem; } }
 
 .icons-wrapper a {
+  letter-spacing: 2rem;
   color: white;
   font-size: 2rem; }
 
@@ -942,6 +943,14 @@ fieldset {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.logo-full-front {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 45%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
@@ -953,12 +962,15 @@ fieldset {
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 3.75rem;
+  margin-top: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem; }
 
 .selected-posts-front-page {
   display: -webkit-box;
@@ -982,7 +994,7 @@ fieldset {
   text-decoration: none;
   letter-spacing: 2px;
   line-height: 1.25;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700; }
 
 .front_page_button {
@@ -997,7 +1009,8 @@ fieldset {
   text-transform: uppercase;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  letter-spacing: 0.25rem; }
 
 .hills-pcs {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
@@ -1054,12 +1067,17 @@ fieldset {
   z-index: 2;
   cursor: pointer; }
 
+.canoe-text {
+  text-decoration: none;
+  color: #647874; }
+
 .beach-text {
+  text-decoration: none;
   font-size: 38, 4px; }
 
 .hills-text,
 .stars-text {
-  font-size: 22px;
+  font-size: 24px;
   width: 11rem; }
 
 button {
@@ -1069,13 +1087,22 @@ button {
   background-color: transparent;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
-  font-size: 14.4px;
+  font-size: 13.4px;
   font-family: sans-serif;
   font-family: 'Novecento Sans Web', sans-serif;
   margin-top: 1.5rem; }
   button:hover {
     background: rgba(255, 255, 255, 0.45);
     color: white; }
+
+.canoe-text button,
+.hills-text button {
+  background-color: #647874; }
+
+.canoe-direct img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
 
 .logo-full h3 {
   font-size: 2rem;

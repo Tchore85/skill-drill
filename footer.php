@@ -50,15 +50,19 @@
 </div>
 </div>
 
+
 <div class="footer-block-item">
-<!-- <div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/logo-skill.png"> -->
+<div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/skill-drill-white.png">
 </div>
+
+
+
 </div>
 </div>
 				<div class="site-info">
 					<div class= "copyright">
 
-					Copyright © 2019 Skill Drill Fun
+					Copyright © 2020 Skill Drill Hockey
 				</div>
 				</div>
 				</div>

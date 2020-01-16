@@ -52,6 +52,12 @@
 									
 									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
 
+
+										<div class="logo-full-front">
+											<img src="<?php echo get_template_directory_uri();?>/images/skill-drill-white.png">
+										</div>
+
+
 								</section>
 								<?php
 								}
