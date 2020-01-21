@@ -43,33 +43,36 @@ get_header(); ?>
                                   $journal_posts = get_posts( $args ); // returns an array of posts
                                   ?>
                                  <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-                          <article class="post">
-                                          
-                                    <div class="post-image">
-                                     <?php the_post_thumbnail();?>
-                                      </div>
-                                <div class ="post-info-wrapper">
-                                        <div class ="post-date">
-                                          <!-- <?php the_date();?> -->
-                                        </div>
 
-                                         <div class="post-title">
-                                              <?php the_title();?>
+                      <article class="post">
+                          <div class="wrapper_thumbnail_front_page">
+                                          
+                              <div class="post-image" style=" height: 30vh;
+									             background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+									
+									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;background-position:50% 100%;"> 
+                                     
+                                    
+                                <div class ="post-info-wrapper">
+                                     <div class="post-title">
+                                         <a href="<?php echo get_the_permalink(); ?>">
+                                              <?php the_title();?> </a>
+                                      </div>
+                                          <div class="front_page_button">
+                                             <a href="<?php echo get_the_permalink(); ?>">Read More</a>
+                                
                                           </div>
-                                            
+
+                                          
+                                  </div>
+         
+                              </div>
+                             
+
+                                <!-- THE END OF WRAPPER FRONT PAGE -->
                                   </div>
                                               
-                                <div class="front_page_button">
-                                  <a href="<?php echo get_the_permalink(); ?>">Read More</a>
-                                
-
-                                  <!-- get_the_permalink() -->
-
-                                              </div>
-                                              
                             </article>
-
-   
 
                               <?php //echo get_the_date();?> 
                               <!-- this is longer version echo will display but if we have only get_the_date
@@ -88,7 +91,7 @@ get_header(); ?>
                   <div class="canoe-girl">
   
                     <a href="events" class="canoe-text">Upcomming Trainings<br> <button type="button">Read More</button></a> 
-                      <img class="canoe-direct" style= background:linear-gradient: rgba(0, 0, 0, 0.35) , src="<?php echo get_stylesheet_directory_uri();?>/images/kalendar4.jpg" alt="kalendar" width="50%"/>
+                      <img class="canoe-direct"  src="<?php echo get_stylesheet_directory_uri();?>/images/kalendar4.jpg" alt="kalendar" />
       
                   </div>
 

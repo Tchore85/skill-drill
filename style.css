@@ -949,14 +949,10 @@ fieldset {
 .logo-full-front {
   position: absolute;
   top: 50%;
-  left: 35%;
-  width: 45%;
+  left: 50%;
+  width: 42%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
-
-.home .post-info-wrapper {
-  padding: 1.75rem;
-  padding-left: 0.5rem; }
 
 .selected-posts h2 {
   font-size: 2.4rem;
@@ -982,23 +978,57 @@ fieldset {
   width: 93%;
   margin: auto; }
 
+.post-image {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .post {
-  border: 1px solid #e1e1e1;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 26%;
           flex: 0 1 26%; }
 
-.post-title {
+.post-title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Novecento Sans Web', sans-serif;
-  color: #647874;
+  color: white;
   text-decoration: none;
   letter-spacing: 2px;
   line-height: 1.25;
   font-size: 1.5rem;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .post-title a:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    font-size: 2rem;
+    color: white; }
 
 .front_page_button {
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .front_page_button a {
+    color: white; }
 
 .description-grid h2 {
   font-size: 2.4rem;
@@ -1129,7 +1159,8 @@ button {
   font-size: 2rem; }
 
 .blog .main-navigation,
-.single-post .main-navigation {
+.single-post .main-navigation,
+.page-template-default .main-navigation {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   height: 3rem; }
@@ -1139,7 +1170,8 @@ button {
     width: 791px; } }
 
 .blog .menu-main-menu-container li a,
-.single-post .menu-main-menu-container li a {
+.single-post .menu-main-menu-container li a,
+.page-template-default .menu-main-menu-container li a {
   color: #647874; }
 
 .blog .fa-search,
@@ -1193,20 +1225,65 @@ button {
   margin-top: 2rem; }
 
 .journal_page_button,
-.front_page_button {
+.front_page_button,
+.nav-next {
   margin-top: 1rem;
   margin-bottom: 1rem; }
   .journal_page_button a,
-  .front_page_button a {
+  .front_page_button a,
+  .nav-next a {
     border: solid 1px #647874;
     text-transform: capitalize;
-    color: #647874;
-    text-decoration: none; }
+    color: white;
+    text-decoration: none;
+    background-color: #647874; }
     .journal_page_button a:hover,
-    .front_page_button a:hover {
-      background-color: #647874;
-      color: white; }
+    .front_page_button a:hover,
+    .nav-next a:hover {
+      background-color: white;
+      color: #647874; }
     @media (min-width: 480px) {
       .journal_page_button a,
-      .front_page_button a {
+      .front_page_button a,
+      .nav-next a {
         padding: 0.5rem; } }
+
+.front_page_button a {
+  border: solid 1px white;
+  color: white;
+  border-radius: 15px; }
+  .front_page_button a:hover {
+    background-color: #647874;
+    color: white; }
+
+.single-post .entry-content h2 {
+  color: #647874; }
+
+.page-find-us .entry-title {
+  color: #404040;
+  font-family: 'Novecento Sans Web', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  width: 73%; }
+
+.admin-bar .icon-search {
+  color: #647874; }
+
+.page-template-default .journal-selection {
+  margin: unset; }
+
+.page-find-us .entry-content {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  line-height: 1.75; }
+
+.page-find-us .entry-content h2 {
+  font-size: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }

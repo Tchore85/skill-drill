@@ -54,7 +54,7 @@
 
 
 										<div class="logo-full-front">
-											<img src="<?php echo get_template_directory_uri();?>/images/skill-drill-white.png">
+											<img src="<?php echo get_template_directory_uri();?>/images/hokeyka.png">
 										</div>
 
 

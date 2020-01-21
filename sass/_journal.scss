@@ -1,5 +1,6 @@
 .blog,
-.single-post {
+.single-post,
+.page-template-default {
   .main-navigation {
     background-color: hsla(0, 0%, 100%, 0.85);
     border-bottom: 1px solid #e1e1e1;
@@ -13,7 +14,8 @@
   }
 }
 .blog,
-.single-post {
+.single-post,
+.page-template-default {
   .menu-main-menu-container li a {
     color: #647874;
   }
@@ -72,21 +74,33 @@
 }
 
 .journal_page_button,
-.front_page_button {
+.front_page_button,
+.nav-next {
   margin-top: 1rem;
   margin-bottom: 1rem;
 
   a {
     border: solid 1px #647874;
     text-transform: capitalize;
-    color: #647874;
+    color: white;
     text-decoration: none;
+    background-color: #647874;
     &:hover {
-      background-color: #647874;
-      color: white;
+      background-color: white;
+      color: $main_green_dark;
     }
     @include desktop {
       padding: 0.5rem;
     }
+  }
+}
+
+.front_page_button a {
+  border: solid 1px white;
+  color: white;
+  border-radius: 15px;
+  &:hover {
+    background-color: #647874;
+    color: white;
   }
 }
