@@ -1,29 +1,32 @@
 .blog,
 .single-post,
-.page-template-default {
+.page-id-11 {
   .main-navigation {
     background-color: hsla(0, 0%, 100%, 0.85);
     border-bottom: 1px solid #e1e1e1;
     height: 3rem;
+    float: unset;
   }
 }
 
 .journal-hockey-picture img {
+  margin-top: 1rem;
   @include desktop {
     width: 791px;
+    margin: unset;
   }
 }
 .blog,
 .single-post,
-.page-template-default {
+.page-id-11 {
   .menu-main-menu-container li a {
-    color: #647874;
+    color: $main_green_dark;
   }
 }
 .blog,
 .single-post {
   .fa-search {
-    color: #647874;
+    color: $main_green_dark;
   }
 }
 .training-title-vs-info {
@@ -34,73 +37,96 @@
 .journal-single-entry-title {
   position: absolute;
   text-decoration: none;
-  background-color: #647874;
-  margin-top: 2rem;
-  font-size: 2.1rem;
+  background-color: $main_green_dark;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  // text-transform: uppercase;
   color: white;
   padding: 0.75rem 1.5rem;
   @include desktop {
-    width: 25rem;
+    font-size: 2.1rem;
+    width: 22rem;
+    margin-top: 4rem;
   }
 }
-
+.entry-content-journal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include desktop {
+    display: unset;
+    flex-direction: unset;
+    text-align: unset;
+  }
+}
 .button-journal {
   color: black;
 }
 
-.boss-color-journal {
-  filter: grayscale(100%);
-  transition: 0.5s;
-  overflow: hidden;
-  cursor: pointer;
-  &:hover {
-    filter: grayscale(0);
-    transform: translateX(0);
-  }
-  &:hover {
-    .journal-entry-title a,
-    .journal-single-entry-title {
-      transform: translateX(0);
-    }
-  }
-}
+// .boss-color-journal {
+//   filter: grayscale(100%);
+//   transition: 0.5s;
+//   overflow: hidden;
+//   cursor: pointer;
+//   &:hover {
+//     filter: grayscale(0);
+//     transform: translateX(0);
+//   }
+//   &:hover {
+//     .journal-entry-title a,
+//     .journal-single-entry-title {
+//       transform: translateX(0);
+//     }
+//   }
+// }
 
-.journal-entry-title a,
-.journal-single-entry-title {
-  text-align: auto;
-  transition: 1s;
-  transform: translateX(-100%);
-  margin-top: 2rem;
-}
+// .journal-entry-title a,
+// .journal-single-entry-title {
+//   text-align: auto;
+//   transition: 1s;
+//   transform: translateX(-100%);
+//   margin-top: 2rem;
+// }
 
 .journal_page_button,
-.front_page_button,
 .nav-next {
   margin-top: 1rem;
   margin-bottom: 1rem;
 
   a {
-    border: solid 1px #647874;
+    border: solid 1px $main_green_dark;
     text-transform: capitalize;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
-    background-color: #647874;
+    background-color: $main_green_dark;
     &:hover {
       background-color: white;
       color: $main_green_dark;
     }
     @include desktop {
       padding: 0.5rem;
+      font-size: 1rem;
     }
   }
 }
 
-.front_page_button a {
-  border: solid 1px white;
-  color: white;
-  border-radius: 15px;
-  &:hover {
-    background-color: #647874;
+.front_page_button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    border: solid 1px white;
     color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 1rem;
+    &:hover {
+      background-color: $main_green_dark;
+      color: white;
+    }
+    @include desktop {
+      padding: 0.5rem;
+    }
   }
 }

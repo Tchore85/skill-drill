@@ -48,8 +48,11 @@
 .sidebar-uni {
   grid-area: Sidebar-uni;
   border-left: 1px solid #e1e1e1;
-  margin-top: 3rem;
-  margin-left: -4rem;
+  margin-left: unset;
+  @include desktop {
+    margin-left: -4rem;
+    margin-top: 3rem;
+  }
 }
 .sidebar-uni {
   a {
@@ -61,8 +64,14 @@
   .widget-area {
     display: flex;
     flex-direction: column;
-    text-align: inherit;
-    margin-left: 3rem;
+    text-align: center;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      text-align: inherit;
+      margin-left: 3rem;
+    }
   }
 }
 .main-journal-section {

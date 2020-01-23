@@ -8,41 +8,59 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 42%;
+  width: 100%;
   transform: translate(-50%, -50%);
+  @include desktop {
+    width: 42%;
+  }
 }
 
-.home .post-info-wrapper {
-  // padding: 1.75rem;
-  // padding-left: 0.5rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-self: center;
-}
+// .home .post-info-wrapper {
+// padding: 1.75rem;
+// padding-left: 0.5rem;
+// display: flex;
+// flex-direction: column;
+// justify-self: center;
+// }
 .selected-posts h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 3.75rem;
+  margin-bottom: unset;
   margin-top: 3.75rem;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  @include desktop {
+    margin-bottom: 3.75rem;
+    font-size: 2.4rem;
+  }
 }
 .selected-posts-front-page {
   display: flex;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  width: 93%;
+  flex-direction: column;
+  max-width: 350px;
   margin: auto;
-}
 
+  @include desktop {
+    flex-direction: row;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    max-width: unset;
+    width: 93%;
+    margin: auto;
+  }
+}
 .post-image {
+  margin-top: 1rem;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
+  @include desktop {
+    margin-top: unset;
+  }
 }
 
 .post {
@@ -76,13 +94,25 @@
     color: white;
   }
 }
+.canoe-girl-nature {
+  max-width: 360px;
+  margin: auto;
+  @include desktop {
+    max-width: unset;
+    margin: unset;
+  }
+}
+
 .description-grid h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
-  display: flex;
   text-transform: uppercase;
+  display: flex;
   justify-content: center;
-  letter-spacing: 0.25rem;
+  @include desktop {
+    font-size: 2.4rem;
+    letter-spacing: 0.25rem;
+  }
 }
 
 .hills-pcs {
@@ -90,6 +120,12 @@
 }
 
 .grid-container-nature {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
   @include desktop {
     width: 1112px;
     margin-left: auto;
@@ -106,46 +142,54 @@
 .stars-pct,
 .hills-pcs,
 .fire-beach-pcs {
+  border-radius: 15px;
   @include desktop {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: unset;
     border: 10px solid white;
   }
 }
 .canoe-girl {
-  grid-area: canoe-girl;
+  @include desktop {
+    grid-area: canoe-girl;
+  }
 }
-
 .beach-fire {
-  grid-area: beach-fire;
+  @include desktop {
+    grid-area: beach-fire;
+  }
 }
-
 .hills {
-  grid-area: hills;
+  @include desktop {
+    grid-area: hills;
+  }
 }
-
 .sky {
-  grid-area: sky;
+  @include desktop {
+    grid-area: sky;
+  }
 }
-
 .canoe-text,
 .beach-text,
 .hills-text,
 .stars-text {
   position: absolute;
-  font-size: 42px;
+  font-size: 22px;
   color: #fff;
   font-family: 'Merriweather Web', serif;
   font-weight: 400;
   text-transform: none;
-  width: 29rem;
+  cursor: pointer;
+  z-index: 2;
   margin-left: 2rem;
   margin-top: 2rem;
-  z-index: 2;
-  cursor: pointer;
+  @include desktop {
+    font-size: 42px;
+    width: 29rem;
+  }
 }
-
 .canoe-text {
   text-decoration: none;
   color: #647874;

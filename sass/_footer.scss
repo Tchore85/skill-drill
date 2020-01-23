@@ -52,10 +52,12 @@
   color: white;
 }
 .text-logo {
+  width: 11rem;
   padding-top: 2rem;
-  width: 17rem;
+  @include desktop {
+    width: 17rem;
+  }
 }
-
 .icons-wrapper {
   @include desktop {
     font-size: 1.5rem;
@@ -64,5 +66,19 @@
     letter-spacing: 2rem;
     color: white;
     font-size: 2rem;
+  }
+}
+
+.contact {
+  margin-left: 1rem;
+  @include desktop {
+    margin-left: unset;
+  }
+}
+
+.bussiness-hours {
+  display: none;
+  @include desktop {
+    display: block;
   }
 }

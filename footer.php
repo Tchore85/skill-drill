@@ -72,6 +72,7 @@
 									</div><!-- .site-info -->
 								</footer><!-- #colophon -->
 							</div><!-- #page -->
+<!-- Compiled and minified JavaScript -->
 
 							<?php wp_footer(); ?>
 

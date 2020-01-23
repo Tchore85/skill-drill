@@ -1,3 +1,10 @@
+.page-id-11 {
+  .entry-header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .page-find-us {
   .entry-title {
     color: #404040;
@@ -5,14 +12,16 @@
     letter-spacing: 2px;
     font-size: 2.4rem;
     width: 73%;
+    margin-top: 5rem;
+    text-transform: uppercase;
   }
 }
-.admin-bar {
+.page-id-11 {
   .icon-search {
     color: $main_green_dark;
   }
 }
-.page-template-default {
+.page-id-11 {
   .journal-selection {
     margin: unset;
   }
@@ -34,4 +43,15 @@
       justify-content: flex-start;
     }
   }
+}
+
+//THIS IS THE CONTACT FORM 7
+
+label {
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+}
+
+.required {
+  color: #d99054;
 }
