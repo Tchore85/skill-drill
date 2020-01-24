@@ -510,7 +510,8 @@ input[type='search'] {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   border-radius: 0;
-  font-size: 19px; }
+  font-size: 19px;
+  max-width: 100%; }
 
 textarea {
   padding-left: 3px;
@@ -602,15 +603,13 @@ div.wpcf7-mail-sent-ok {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
+  float: left; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
-  text-align: right;
-  width: 50%; }
+  text-align: right; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -747,7 +746,11 @@ div.wpcf7-mail-sent-ok {
             flex-direction: column; } }
 
 .entry-content-journal p {
-  max-width: 791px; }
+  max-width: 365px;
+  margin: auto; }
+  @media (min-width: 480px) {
+    .entry-content-journal p {
+      max-width: 795px; } }
 
 /*--------------------------------------------------------------
 # Content
@@ -804,11 +807,15 @@ iframe,
 object {
   max-width: 100%; }
 
+@media (min-width: 480px) {
+  iframe {
+    width: 700px; } }
+
 /* Captions */
 .wp-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
+  .wp-caption img[class*='wp-image-'] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -981,6 +988,10 @@ fieldset {
   .day-of-week p {
     font-family: 'Merriweather Web', serif; }
 
+.day-of-week-kalendar {
+  color: white;
+  text-decoration: none; }
+
 .copyright {
   font-family: 'Merriweather Web', serif;
   display: -webkit-box;
@@ -990,8 +1001,20 @@ fieldset {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
+  color: white; }
+
+.copyright_michal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: 'Merriweather Web', serif;
   color: white;
-  padding: 1.5rem 0; }
+  padding: 0.5rem 0; }
 
 .a-footer a {
   color: white;
@@ -1003,7 +1026,7 @@ fieldset {
   color: white; }
 
 .text-logo {
-  width: 11rem;
+  width: 8rem;
   padding-top: 2rem; }
   @media (min-width: 480px) {
     .text-logo {
@@ -1049,7 +1072,7 @@ fieldset {
       width: 42%; } }
 
 .selected-posts h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: unset;
   margin-top: 3.75rem;
@@ -1059,12 +1082,12 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem; }
+  text-transform: uppercase; }
   @media (min-width: 480px) {
     .selected-posts h2 {
       margin-bottom: 3.75rem;
-      font-size: 2.4rem; } }
+      font-size: 2.4rem;
+      letter-spacing: 0.25rem; } }
 
 .selected-posts-front-page {
   display: -webkit-box;
@@ -1364,7 +1387,7 @@ button {
   position: absolute;
   text-decoration: none;
   background-color: #647874;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
   padding: 0.75rem 1.5rem; }
@@ -1397,11 +1420,13 @@ button {
   color: black; }
 
 .journal_page_button,
-.nav-next {
+.nav-next,
+.nav-previous {
   margin-top: 1rem;
   margin-bottom: 1rem; }
   .journal_page_button a,
-  .nav-next a {
+  .nav-next a,
+  .nav-previous a {
     border: solid 1px #647874;
     text-transform: capitalize;
     font-size: 1.5rem;
@@ -1409,12 +1434,14 @@ button {
     text-decoration: none;
     background-color: #647874; }
     .journal_page_button a:hover,
-    .nav-next a:hover {
+    .nav-next a:hover,
+    .nav-previous a:hover {
       background-color: white;
       color: #647874; }
     @media (min-width: 480px) {
       .journal_page_button a,
-      .nav-next a {
+      .nav-next a,
+      .nav-previous a {
         padding: 0.5rem;
         font-size: 1rem; } }
 
@@ -1434,6 +1461,21 @@ button {
       .front_page_button a {
         padding: 0.5rem; } }
 
+.single-post .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  @media (min-width: 480px) {
+    .single-post .entry-content {
+      display: unset;
+      text-align: unset;
+      text-align: unset; } }
+
 .single-post .entry-content h2 {
   color: #647874; }
 
@@ -1445,14 +1487,25 @@ button {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.page-find-us {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media (min-width: 480px) {
+    .page-find-us {
+      margin-left: 0;
+      margin-right: 0; } }
+
 .page-find-us .entry-title {
   color: #404040;
   font-family: 'Novecento Sans Web', sans-serif;
   letter-spacing: 2px;
   font-size: 2.4rem;
-  width: 73%;
+  width: unset;
   margin-top: 5rem;
   text-transform: uppercase; }
+  @media (min-width: 480px) {
+    .page-find-us .entry-title {
+      width: 73%; } }
 
 .page-id-11 .icon-search {
   color: #647874; }
@@ -1464,8 +1517,11 @@ button {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 100%;
   line-height: 1.75; }
+  @media (min-width: 480px) {
+    .page-find-us .entry-content {
+      max-width: 800px; } }
 
 .page-find-us .entry-content h2 {
   font-size: 2.1rem;
@@ -1482,3 +1538,23 @@ label {
 
 .required {
   color: #d99054; }
+
+.post-type-archive .main-navigation,
+.single-tribe_events .main-navigation {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  height: 3rem;
+  float: unset; }
+
+.post-type-archive .menu-main-menu-container li a,
+.single-tribe_events .menu-main-menu-container li a {
+  color: #647874; }
+
+.post-type-archive .fa-search,
+.single-tribe_events .fa-search {
+  color: #647874; }
+
+@media (min-width: 480px) {
+  .tribe-clearfix,
+  #tribe-events-content {
+    padding-top: 3rem; } }

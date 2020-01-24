@@ -32,6 +32,10 @@
     font-family: 'Merriweather Web', serif;
   }
 }
+.day-of-week-kalendar {
+  color: white;
+  text-decoration: none;
+}
 
 .copyright {
   font-family: 'Merriweather Web', serif;
@@ -39,8 +43,18 @@
   justify-content: center;
   text-transform: uppercase;
   color: white;
-  padding: 1.5rem 0;
+  // padding: 1.5rem 0;
 }
+.copyright_michal {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: 'Merriweather Web', serif;
+  color: white;
+  padding: 0.5rem 0;
+}
+
 .a-footer a {
   color: white;
   font-style: normal;
@@ -52,7 +66,7 @@
   color: white;
 }
 .text-logo {
-  width: 11rem;
+  width: 8rem;
   padding-top: 2rem;
   @include desktop {
     width: 17rem;

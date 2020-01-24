@@ -1,4 +1,17 @@
 .single-post {
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include desktop {
+      display: unset;
+      text-align: unset;
+      text-align: unset;
+    }
+  }
+}
+
+.single-post {
   .entry-content h2 {
     color: $main_green_dark;
   }

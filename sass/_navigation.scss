@@ -126,12 +126,15 @@
 
   .nav-previous {
     float: left;
-    width: 50%;
+    // display: flex;
+
+    // width: 50%;
   }
 
   .nav-next {
     float: right;
+    // display: flex;
     text-align: right;
-    width: 50%;
+    // width: 50%;
   }
 }

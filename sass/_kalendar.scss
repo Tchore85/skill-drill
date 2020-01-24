@@ -1,0 +1,30 @@
+//THIS IS THE NAVIGATION COLOR ON KALENDAR
+.post-type-archive,
+.single-tribe_events {
+  .main-navigation {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    border-bottom: 1px solid #e1e1e1;
+    height: 3rem;
+    float: unset;
+  }
+}
+
+.post-type-archive,
+.single-tribe_events {
+  .menu-main-menu-container li a {
+    color: $main_green_dark;
+  }
+}
+.post-type-archive,
+.single-tribe_events {
+  .fa-search {
+    color: $main_green_dark;
+  }
+}
+
+.tribe-clearfix,
+#tribe-events-content {
+  @include desktop {
+    padding-top: 3rem;
+  }
+}

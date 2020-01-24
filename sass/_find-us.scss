@@ -6,14 +6,26 @@
 }
 
 .page-find-us {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.page-find-us {
   .entry-title {
     color: #404040;
     font-family: 'Novecento Sans Web', sans-serif;
     letter-spacing: 2px;
     font-size: 2.4rem;
-    width: 73%;
+    width: unset;
     margin-top: 5rem;
     text-transform: uppercase;
+    @include desktop {
+      width: 73%;
+    }
   }
 }
 .page-id-11 {
@@ -31,8 +43,11 @@
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 100%;
     line-height: 1.75;
+    @include desktop {
+      max-width: 800px;
+    }
   }
 }
 .page-find-us {

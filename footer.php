@@ -41,9 +41,9 @@
 			<div class="footer-block-item">
 <div class="bussiness-hours">
 <div class=text-footer>
-<h3>Training Hours</h3>
+<h3>Training Hours & Days</h3>
 </div>
-<p><span class="day-of-week">Tuesday:</span> 7:30 Uhr to 9:15 Uhr</p>
+<p><span class="day-of-week">Please Visit Our :</span><a href="events" class="day-of-week-kalendar"> KALENDAR</a></p>
 <p><span class="day-of-week">Friday:</span> 8:00 Uhr to 9:15 Uhr </p>
 
 
@@ -61,8 +61,10 @@
 </div>
 				<div class="site-info">
 					<div class= "copyright">
-
-					Copyright © 2020 Skill Drill Hockey
+					Copyright © 2020 Skill Drill Fun 
+				</div>
+				<div class= "copyright_michal">
+				Page Design by Michal Prokop
 				</div>
 				</div>
 				</div>
