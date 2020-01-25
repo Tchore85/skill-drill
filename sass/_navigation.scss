@@ -33,7 +33,7 @@
   width: 100%;
 
   ul {
-    // display: none;
+    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -50,6 +50,12 @@
         left: -999rem;
         top: 0;
       }
+
+      // .main-navigation ul {
+      //   @include desktop {
+      //     display: none;
+      //   }
+      // }
 
       li {
         &:hover > ul,
@@ -100,11 +106,15 @@
 
 /* Small menu. */
 .menu-toggle {
-  display: none;
+  display: flex;
 }
 
 .main-navigation.toggled ul {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  // justify-content: flex-start;
+  // background-color: hsla(0, 0%, 100%, 0.25);
 }
 
 @media screen and (min-width: 768px) {
@@ -116,6 +126,19 @@
   }
 }
 
+.hamburger_menu {
+  margin-left: 1rem;
+  width: 30%;
+  position: absolute;
+  position: fixed;
+  z-index: 2;
+  @include desktop {
+    width: unset;
+  }
+  img {
+    width: 40%;
+  }
+}
 .comment-navigation,
 .posts-navigation,
 .post-navigation {

@@ -5,15 +5,15 @@
  * navigation support for dropdown menus.
  */
 (function() {
-  let container, button, menu, links, i, len;
+  let container, img, menu, links, i, len;
 
   container = document.getElementById('site-navigation');
   if (!container) {
     return;
   }
 
-  button = container.getElementsByTagName('button')[0];
-  if ('undefined' === typeof button) {
+  img = container.getElementsByTagName('img')[0];
+  if ('undefined' === typeof img) {
     return;
   }
 
@@ -21,7 +21,7 @@
 
   // Hide menu toggle button if menu is empty and return early.
   if ('undefined' === typeof menu) {
-    button.style.display = 'none';
+    img.style.display = 'none';
     return;
   }
 
@@ -30,14 +30,14 @@
     menu.className += ' nav-menu';
   }
 
-  button.onclick = function() {
+  img.onclick = function() {
     if (-1 !== container.className.indexOf('toggled')) {
       container.className = container.className.replace(' toggled', '');
-      button.setAttribute('aria-expanded', 'false');
+      img.setAttribute('aria-expanded', 'false');
       menu.setAttribute('aria-expanded', 'false');
     } else {
       container.className += ' toggled';
-      button.setAttribute('aria-expanded', 'true');
+      img.setAttribute('aria-expanded', 'true');
       menu.setAttribute('aria-expanded', 'true');
     }
   };
