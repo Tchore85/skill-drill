@@ -1,11 +1,12 @@
 .main-navigation {
+  background-color: hsla(0, 0%, 100%, 0.25);
+  position: fixed;
   @include desktop {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-transform: uppercase;
-    position: fixed;
-    background-color: hsla(0, 0%, 100%, 0.25);
+
     border-bottom: 1px solid #e1e1e11b;
     height: 2.5rem;
     z-index: 3;
@@ -94,6 +95,9 @@
 
 fieldset {
   border: none;
-  padding-top: 0.5rem;
+  padding-top: 0rem;
   padding-right: 1rem;
+  @include desktop {
+    padding-top: 0.5rem;
+  }
 }

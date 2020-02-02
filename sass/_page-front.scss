@@ -116,10 +116,6 @@
   }
 }
 
-.hills-pcs {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-}
-
 .grid-container-nature {
   max-width: 100%;
   margin-left: auto;
@@ -152,6 +148,11 @@
     border: 10px solid white;
   }
 }
+.fire-beach-pcs {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .canoe-girl {
   @include desktop {
     grid-area: canoe-girl;
@@ -191,6 +192,7 @@
     width: 29rem;
   }
 }
+
 .canoe-text {
   text-decoration: none;
   color: #647874;
@@ -199,6 +201,7 @@
 .beach-text {
   text-decoration: none;
   font-size: 38, 4px;
+  color: #647874;
 }
 
 .hills-text,
@@ -234,6 +237,40 @@ button {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+
+//THIS IS THE WEATHER ICON
+
+.weather-widget {
+  display: flex;
+  @include desktop {
+    display: block;
+    text-align: center;
+  }
+}
+.ikona {
+  margin: auto;
+  @include desktop {
+    margin: unset;
+  }
+}
+
+.descript {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.weather-widget p {
+  color: white;
+}
+.temp-descript {
+  @include desktop {
+    margin-top: -2rem;
+  }
+}
+
+//END OF WEATHER
 
 // .canoe-girl {
 //   position: relative;

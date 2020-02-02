@@ -1,20 +1,20 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   window.onload = function() {
-//     $.ajax({
-//       method: 'GET',
-//       url:
-//         '  https://api.openweathermap.org/data/2.5/weather?q=Zurich&units=metric&appid,ca&appid=4a48e1e1428fd83889074671fbf259d9'
-//     }).done(function(results) {
-//       console.log(results);
-//       $('#results').empty();
-//       $('#results').append(
-//         `<img class="ikona" src="http://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png"/>
-//           <p> ${results.weather[0].description}</p>
-//           <p> Temp:${results.main.temp}Ceslium</p>`
-//       );
-//     });
-//   };
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  window.onload = function() {
+    $.ajax({
+      method: 'GET',
+      url:
+        '  https://api.openweathermap.org/data/2.5/weather?q=Zurich&units=metric&appid,ca&appid=4a48e1e1428fd83889074671fbf259d9'
+    }).done(function(results) {
+      console.log(results);
+      $('#results').empty();
+      $('#results').append(
+        `<img class="ikona" src="http://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png"/>
+        <div class="temp-descript"> <p class="descript"> ${results.weather[0].description}</p>
+          <p> Temp:${results.main.temp}˚C</p></div>`
+      );
+    });
+  };
+});
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   window.onload = function() {

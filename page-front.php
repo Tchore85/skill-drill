@@ -9,10 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main home-page" role="main">
-    <div class="weather-widget">
+    <!-- <div class="weather-widget">
 											<div id="results"></div>
 
-										</div>
+										</div> -->
 
 
                     
@@ -103,16 +103,21 @@ get_header(); ?>
 
                     <div class="beach-fire">
   
-                        <a href="home" class="beach-text">Improve Your Skills On Ice Today <br><button type="button">Read More</button></a>
-                           <img class="fire-beach-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/team-training.jpg">
+                        <a href="home" class="beach-text">Newest Technologies <br><button type="button">Read More</button></a>
+                           <img class="fire-beach-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/specter/specter-1.jpg">
 
                     </div>
 
                          <div class="hills">
-                           <a class="hills-text">Excellent Location<button type="button">Read More</button></a>
-                              <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/branka.jpg">
+                           <a class="hills-text">Wetter Zürich<div class="weather-widget" id="results" ></div> </a>
 
+                        
+                          <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/ice-weather.jpg">
+                              
                           </div>
+                   
+
+
                           <div class="sky">
                             <a class="stars-text">Train As a Profi<button type="button">Read More</button></a>
                               <img class="stars-pct" src="<?php echo get_stylesheet_directory_uri();?>/images/training.jpg">

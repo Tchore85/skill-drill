@@ -34,20 +34,31 @@
   position: absolute;
 }
 
+.journal-entry-title {
+  display: flex;
+  justify-content: center;
+  @include desktop {
+    display: block;
+  }
+}
+
 .journal-entry-title a,
 .journal-single-entry-title {
   position: absolute;
   text-decoration: none;
   background-color: $main_green_dark;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   font-size: 1.5rem;
   // text-transform: uppercase;
   color: white;
   padding: 0.75rem 1.5rem;
+
   @include desktop {
     font-size: 2.1rem;
     width: 22rem;
     margin-top: 4rem;
+    left: unset;
+    // left: 9.75rem;
   }
 }
 .entry-content-journal {

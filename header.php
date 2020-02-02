@@ -32,10 +32,29 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="hamburger_menu">
-					<img class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" src="<?php echo get_template_directory_uri(); ?>/images/Burger.svg" alt="icon-hamburger"></img>
+					<?php if(is_front_page() || is_page() ){
+							if ( has_post_thumbnail() ) { ?>
+
+
+<a><img class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/images/hamburger-light.png" alt="icon-hamburger"></img></a>
+
+<?php } else {  ?>
+	<a><img class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/images/hamburger-green.png" alt="icon-hamburger"></img></a>
+
+	<?php	} ?>
+
+	<?php } else { ?>
+		<a><img class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" src="<?php echo get_stylesheet_directory_uri();?>/images/hamburger-green.png" alt="icon-hamburger"></img></a>
+			<?php	} ?>
 					
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
+
+
+
+
+
+					
 					<div class="only_searchform">
 
 								<?php get_search_form();?> 
@@ -88,7 +107,6 @@
 									}
 								}
 								?>
-
 
 
 			<div id="content" class="site-content">
