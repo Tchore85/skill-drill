@@ -41,11 +41,11 @@ get_header(); ?>
 
 
 <section class="selected-posts">
-                      <h2>Unsere Programme</h2>
+                      <h2>Hockey Programme</h2>
                             <div class ="selected-posts-front-page">
                                                   
                                 <?php
-                                  $args = array( 'post_type' => 'post','posts_per_page' => 3, 'order' => 'DESC' );
+                                  $args = array( 'post_type' => 'post','posts_per_page' => 9, 'order' => 'DESC' );
                                   $journal_posts = get_posts( $args ); // returns an array of posts
                                   ?>
                                  <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
@@ -96,15 +96,15 @@ get_header(); ?>
 
                   <div class="canoe-girl">
   
-                    <a href="events" class="canoe-text">Upcomming Trainings<br> <button type="button">Read More</button></a> 
+                    <a href="events" class="canoe-text">Hockey Training<br> <button type="button">Read More</button></a> 
                       <img class="canoe-direct"  src="<?php echo get_stylesheet_directory_uri();?>/images/kalendar4.jpg" alt="kalendar" />
       
                   </div>
 
                     <div class="beach-fire">
   
-                        <a href="home" class="beach-text">Newest Technologies <br><button type="button">Read More</button></a>
-                           <img class="fire-beach-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/specter/specter-1.jpg">
+                        <a href="home" class="beach-text">Neueste Technologie <br><button type="button">Read More</button></a>
+                           <img class="fire-beach-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/specter/specter-1.jpg" alt="specter-hockey" />
 
                     </div>
 
@@ -112,15 +112,14 @@ get_header(); ?>
                            <a class="hills-text">Wetter Zürich<div class="weather-widget" id="results" ></div> </a>
 
                         
-                          <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/ice-weather.jpg">
+                          <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/ice-weather.jpg" alt="weather" />
                               
                           </div>
                    
 
-
                           <div class="sky">
-                            <a class="stars-text">Train As a Profi<button type="button">Read More</button></a>
-                              <img class="stars-pct" src="<?php echo get_stylesheet_directory_uri();?>/images/training.jpg">
+                            <a class="stars-text">Trenieren Wie Ein Profi</a>
+                              <img class="stars-pct" src="<?php echo get_stylesheet_directory_uri();?>/images/dolder-ice-rink.jpg">
                           </div>
                          </div>  
                       </section>

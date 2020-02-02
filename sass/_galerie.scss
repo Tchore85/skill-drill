@@ -1,0 +1,41 @@
+.galery-page .page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $main_green_dark;
+  border-bottom: 1px dashed #c8c8c8;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .entry-content {
+    margin: unset;
+  }
+  //   margin: unset;
+}
+
+.product-grid-archive {
+  display: block;
+  max-width: 350px;
+  margin: auto;
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    max-width: 1100px;
+    margin-bottom: 2rem;
+  }
+}
+.mobile-svg {
+  @include desktop {
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+}
+
+.mobile-svg:hover {
+  @include desktop {
+    -webkit-transform: scale(2); /* or some other value */
+    transform: scale(2);
+  }
+}

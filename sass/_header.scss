@@ -1,6 +1,8 @@
 .main-navigation {
   background-color: hsla(0, 0%, 100%, 0.25);
   position: fixed;
+  top: 0;
+  z-index: 3;
   @include desktop {
     display: flex;
     justify-content: flex-start;
@@ -40,8 +42,11 @@
 }
 
 // HAMBURGER MENU ORDER
-.menu-item-37 {
+.menu-item-168 {
   order: 4;
+}
+.menu-item-37 {
+  order: 5;
 }
 .menu-item-39 {
   order: 3;

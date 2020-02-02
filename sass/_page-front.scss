@@ -47,11 +47,18 @@
     flex-direction: row;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     max-width: unset;
     width: 93%;
     margin: auto;
   }
 }
+.wrapper_thumbnail_front_page {
+  @include desktop {
+    margin-top: 1rem;
+  }
+}
+
 .post-image {
   margin-top: 1rem;
   border-radius: 15px;
@@ -132,7 +139,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'canoe-girl canoe-girl beach-fire beach-fire' 'canoe-girl canoe-girl hills sky';
+    grid-template-areas: 'canoe-girl canoe-girl beach-fire beach-fire' 'canoe-girl canoe-girl sky hills ';
   }
 }
 .canoe-direct,
@@ -229,7 +236,8 @@ button {
 }
 
 .canoe-text button,
-.hills-text button {
+.hills-text button,
+.beach-text button {
   background-color: #647874;
 }
 

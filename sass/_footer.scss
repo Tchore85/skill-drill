@@ -94,5 +94,11 @@
   display: none;
   @include desktop {
     display: block;
+    .fa-calendar-alt {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+    }
   }
 }

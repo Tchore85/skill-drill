@@ -32,7 +32,7 @@
 		<p>
 			<span><a href=" https://www.facebook.com/SkillDrillFun"><i class="fab fa-facebook-f"></i></a></span>
 			<span><a href=" https://www.instagram.com/skilldrillfun"><i class="fab fa-instagram"></i></a></span>
-			
+		
 		</p>
 		</div>
 		</div>
@@ -44,7 +44,8 @@
 <h3>Training Hours & Days</h3>
 </div>
 <p><span class="day-of-week">Please Visit Our :</span><a href="events" class="day-of-week-kalendar"> KALENDAR</a></p>
-<p><span class="day-of-week">Friday:</span> 8:00 Uhr to 9:15 Uhr </p>
+<span><a href="events"><i class="far fa-calendar-alt"></i></a></span>
+
 
 
 </div>

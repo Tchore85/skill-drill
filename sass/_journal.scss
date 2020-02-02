@@ -1,6 +1,7 @@
 .blog,
 .single-post,
-.page-id-11 {
+.page-id-11,
+.page-id-166 {
   .main-navigation {
     background-color: hsla(0, 0%, 100%, 0.85);
     border-bottom: 1px solid #e1e1e1;
@@ -18,13 +19,15 @@
 }
 .blog,
 .single-post,
-.page-id-11 {
+.page-id-11,
+.page-id-166 {
   .menu-main-menu-container li a {
     color: $main_green_dark;
   }
 }
 .blog,
-.single-post {
+.single-post,
+.page-id-166 {
   .fa-search {
     color: $main_green_dark;
   }

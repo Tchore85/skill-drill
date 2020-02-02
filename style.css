@@ -421,7 +421,7 @@ ol {
       padding: 0rem; }
 
 .tribe-event-title a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none; }
 
 ol {
@@ -885,7 +885,9 @@ object {
 /* Front page */
 .main-navigation {
   background-color: rgba(255, 255, 255, 0.25);
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  z-index: 3; }
   @media (min-width: 480px) {
     .main-navigation {
       display: -webkit-box;
@@ -940,10 +942,15 @@ object {
               justify-content: unset;
       width: unset; } }
 
-.menu-item-37 {
+.menu-item-168 {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4; }
+
+.menu-item-37 {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5; }
 
 .menu-item-39 {
   -webkit-box-ordinal-group: 4;
@@ -1104,7 +1111,16 @@ fieldset {
   display: none; }
   @media (min-width: 480px) {
     .bussiness-hours {
-      display: block; } }
+      display: block; }
+      .bussiness-hours .fa-calendar-alt {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: white;
+        font-size: 2rem; } }
 
 .logo-full {
   position: absolute;
@@ -1161,9 +1177,15 @@ fieldset {
       -ms-flex-pack: space-evenly;
       -webkit-box-pack: space-evenly;
               justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       max-width: unset;
       width: 93%;
       margin: auto; } }
+
+@media (min-width: 480px) {
+  .wrapper_thumbnail_front_page {
+    margin-top: 1rem; } }
 
 .post-image {
   margin-top: 1rem;
@@ -1266,7 +1288,7 @@ fieldset {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: 'canoe-girl canoe-girl beach-fire beach-fire' 'canoe-girl canoe-girl hills sky'; } }
+      grid-template-areas: 'canoe-girl canoe-girl beach-fire beach-fire' 'canoe-girl canoe-girl sky hills '; } }
 
 .canoe-direct,
 .stars-pct,
@@ -1357,7 +1379,8 @@ button {
     color: white; }
 
 .canoe-text button,
-.hills-text button {
+.hills-text button,
+.beach-text button {
   background-color: #647874; }
 
 .canoe-direct img {
@@ -1439,7 +1462,8 @@ button {
 
 .blog .main-navigation,
 .single-post .main-navigation,
-.page-id-11 .main-navigation {
+.page-id-11 .main-navigation,
+.page-id-166 .main-navigation {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   height: 3rem;
@@ -1454,11 +1478,13 @@ button {
 
 .blog .menu-main-menu-container li a,
 .single-post .menu-main-menu-container li a,
-.page-id-11 .menu-main-menu-container li a {
+.page-id-11 .menu-main-menu-container li a,
+.page-id-166 .menu-main-menu-container li a {
   color: #647874; }
 
 .blog .fa-search,
-.single-post .fa-search {
+.single-post .fa-search,
+.page-id-166 .fa-search {
   color: #647874; }
 
 .training-title-vs-info {
@@ -1632,6 +1658,50 @@ label {
 
 .required {
   color: #d99054; }
+
+.galery-page .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #647874;
+  border-bottom: 1px dashed #c8c8c8;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .galery-page .page .entry-content {
+    margin: unset; }
+
+.product-grid-archive {
+  display: block;
+  max-width: 350px;
+  margin: auto; }
+  @media (min-width: 480px) {
+    .product-grid-archive {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      max-width: 1100px;
+      margin-bottom: 2rem; } }
+
+@media (min-width: 480px) {
+  .mobile-svg {
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.25s ease;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, -webkit-transform 0.25s ease; } }
+
+@media (min-width: 480px) {
+  .mobile-svg:hover {
+    -webkit-transform: scale(2);
+    /* or some other value */
+    transform: scale(2); } }
 
 .post-type-archive .main-navigation,
 .single-tribe_events .main-navigation {
