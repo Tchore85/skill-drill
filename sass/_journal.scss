@@ -72,6 +72,10 @@
     display: unset;
     flex-direction: unset;
     text-align: unset;
+    p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 }
 .button-journal {
@@ -107,7 +111,7 @@
 .nav-next,
 .nav-previous {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   a {
     border: solid 1px $main_green_dark;

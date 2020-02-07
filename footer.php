@@ -22,7 +22,7 @@
 	<i class="fas fa-envelope"></i>
 <i class="a-footer">
 
-			<a href="https://www.linkedin.com/in/michal-prokop-b4994617">info@skill-drill-fun.com</a>
+			<a href="mailto:info@skill-drill-fun.com">info@skill-drill-fun.com</a>
 		</p>
 </i>
 			<p><i class="fas fa-phone-alt"></i>

@@ -36,7 +36,7 @@
 .journal-selection {
   grid-area: journal-selection;
 
-  margin: 3rem auto auto auto;
+  margin: 5rem auto auto auto;
 }
 
 .single-post {
@@ -71,6 +71,7 @@
       flex-direction: column;
       text-align: inherit;
       margin-left: 3rem;
+      margin-top: 2rem;
     }
   }
 }

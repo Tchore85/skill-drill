@@ -75,7 +75,7 @@
 
 
 										<div class="logo-full-front">
-											<img src="<?php echo get_template_directory_uri();?>/images/hokeyka.png">
+											<img src="<?php echo get_template_directory_uri();?>/images/original-logo-transparent.png">
 										</div>
 
 										
