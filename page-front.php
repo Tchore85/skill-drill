@@ -52,11 +52,12 @@ get_header(); ?>
 
                       <article class="post">
                           <div class="wrapper_thumbnail_front_page">
-                                          
-                              <div class="post-image" style=" height: 30vh;
+                        
+                              <div class="post-image"  style=" height: 30vh;
+                              
 									             background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
-									
-									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;background-position:50% 100%;"> 
+                             
+									url(<?php echo the_post_thumbnail_url();?>); background-size:cover;background-position:50% 100%;"> </a>
                                      
                                     
                                 <div class ="post-info-wrapper">

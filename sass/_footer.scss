@@ -69,11 +69,22 @@
 .text-logo {
   width: 8rem;
   padding-top: 2rem;
-  @include desktop {
-    width: 17rem;
+  @include tablet {
+    width: 14rem;
+    @include desktop {
+      width: 17rem;
+    }
   }
 }
 .icons-wrapper {
+  @include tablet {
+    font-size: 1rem;
+  }
+  a {
+    letter-spacing: 2rem;
+    color: white;
+    font-size: 1rem;
+  }
   @include desktop {
     font-size: 1.5rem;
   }
@@ -86,20 +97,32 @@
 
 .contact {
   margin-left: 1rem;
-  @include desktop {
+  @include tablet {
     margin-left: unset;
+
+    @include desktop {
+      margin-left: unset;
+    }
   }
 }
-
 .bussiness-hours {
   display: none;
-  @include desktop {
+  @include tablet {
     display: block;
     .fa-calendar-alt {
       display: flex;
       justify-content: center;
       color: white;
       font-size: 2rem;
+      @include desktop {
+        // display: block;
+        .fa-calendar-alt {
+          display: flex;
+          justify-content: center;
+          color: white;
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

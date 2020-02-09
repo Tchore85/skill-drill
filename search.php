@@ -7,32 +7,44 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="grid-container">
 
-		<?php if ( have_posts() ) : ?>
+			<div class="journal-selection">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+					<section id="primary" class="content-area">
+						<main id="main" class="site-main page-results" role="main">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+						<?php if ( have_posts() ) : ?>
 
-				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+							<header class="page-header">
+								<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+							</header><!-- .page-header -->
 
-			<?php endwhile; ?>
+							<?php /* Start the Loop */ ?>
+							<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php red_starter_numbered_pagination(); ?>
+								<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
-		<?php else : ?>
+							<?php endwhile; ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+							<?php red_starter_numbered_pagination(); ?>
 
-		<?php endif; ?>
+						<?php else : ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+						<?php endif; ?>
+
+						</main><!-- #main -->
+					</section><!-- #primary -->
+
+						</div>
+
+					<div class="sidebar-uni">
+
+						<?php get_sidebar(); ?>
+
+					</div>
+				</div>
+
+					<?php get_footer(); ?>

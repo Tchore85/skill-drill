@@ -1,7 +1,11 @@
 .blog,
 .single-post,
 .page-id-11,
-.page-id-166 {
+.page-id-166,
+.page-id-235,
+.search-results,
+.search-no-results,
+.error404 {
   .main-navigation {
     background-color: hsla(0, 0%, 100%, 0.85);
     border-bottom: 1px solid #e1e1e1;
@@ -12,22 +16,34 @@
 
 .journal-hockey-picture img {
   margin-top: 1rem;
-  @include desktop {
-    width: 791px;
-    margin: unset;
+  @include tablet {
+    width: 691px;
+    @include desktop {
+      width: 791px;
+      margin: unset;
+    }
   }
 }
+
 .blog,
 .single-post,
 .page-id-11,
-.page-id-166 {
+.page-id-166,
+.page-id-235,
+.search-results,
+.search-no-results,
+.error404 {
   .menu-main-menu-container li a {
     color: $main_green_dark;
   }
 }
 .blog,
 .single-post,
-.page-id-166 {
+.page-id-166,
+.page-id-235,
+.search-results,
+.search-no-results,
+.error404 {
   .fa-search {
     color: $main_green_dark;
   }
@@ -40,6 +56,9 @@
 .journal-entry-title {
   display: flex;
   justify-content: center;
+  @include tablet {
+    display: block;
+  }
   @include desktop {
     display: block;
   }

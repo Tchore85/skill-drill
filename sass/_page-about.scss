@@ -14,22 +14,36 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 2rem;
-    @include desktop {
-      max-width: 800px;
+    @include tablet {
+      max-width: 700px;
     }
-  }
-  h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      @include desktop {
+        max-width: 800px;
+      }
+    }
+    h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+    }
   }
 }
 .has-text-align-left {
   display: flex;
   text-align: center;
   flex-direction: column;
-  @include desktop {
+  @include tablet {
     text-align: unset;
     flex-direction: unset;
+
+    @include desktop {
+      text-align: unset;
+      flex-direction: unset;
+    }
   }
 }

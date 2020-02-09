@@ -1,0 +1,61 @@
+.search-results {
+  .journal-selection {
+    @include tablet {
+      max-width: 700px;
+      @include desktop {
+        max-width: 800px;
+      }
+    }
+  }
+}
+.page-results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include desktop {
+    display: block;
+    text-align: start;
+  }
+}
+
+.page-results {
+  .page-title {
+    color: $main_green_dark;
+    // display: flex;
+    // flex-direction: column;
+    // text-align: center;
+    @include desktop {
+    }
+  }
+}
+
+.page-results {
+  .entry-title a {
+    color: $main_green_dark;
+    font-size: 1rem;
+  }
+}
+
+//PAGE SEARCH NO RESULTS
+.search-no-results {
+  .search-form {
+    text-align: center;
+  }
+}
+
+//THIS IS THE ERROR PAGE
+.error404 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include tablet {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+    @include desktop {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      line-height: 3rem;
+    }
+  }
+}
