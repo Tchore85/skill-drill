@@ -26,19 +26,29 @@
 //THIS IS THE SIDEBAR
 
 .grid-container {
-  @include desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni';
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni';
+    }
   }
 }
+
 .journal-selection {
   grid-area: journal-selection;
 
   margin: 5rem auto auto auto;
+  @include tablet {
+    display: flex;
+    @include desktop {
+      display: block;
+    }
+  }
 }
-
 .single-post {
   .journal-selection {
     margin: 4.5rem auto auto auto;
@@ -77,22 +87,28 @@
 }
 .main-journal-section {
   // flex-direction: column;
-
-  @include desktop {
-    max-width: 800px;
+  @include tablet {
+    max-width: 700px;
     display: flex;
     flex-direction: column;
+    @include desktop {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .entry-content-journal p {
   max-width: 365px;
   margin: auto;
-  @include desktop {
-    max-width: 795px;
-    // margin: unset;
+  @include tablet {
+    max-width: 695px;
+    @include desktop {
+      max-width: 795px;
+      // margin: unset;
+    }
   }
 }
-
 //THIS IS TO CENTER WIDGET SIDEBARS SEPARATELY
 
 // .widget_custom_html,

@@ -750,7 +750,7 @@ div.wpcf7-mail-sent-ok {
       padding-top: unset; } }
   .hamburger_menu img {
     width: 25%; }
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       .hamburger_menu img {
         width: unset;
         padding-top: unset; } }
@@ -849,16 +849,33 @@ div.wpcf7-mail-sent-ok {
 .widget_search .search-submit {
   display: none; }
 
-@media (min-width: 1000px) {
+@media (min-width: 480px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni'; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni' 'journal-selection journal-selection journal-selection Sidebar-uni'; } }
 
 .journal-selection {
   grid-area: journal-selection;
   margin: 5rem auto auto auto; }
+  @media (min-width: 480px) {
+    .journal-selection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
+    .journal-selection {
+      display: block; } }
 
 .single-post .journal-selection {
   margin: 4.5rem auto auto auto; }
@@ -867,7 +884,7 @@ div.wpcf7-mail-sent-ok {
   grid-area: Sidebar-uni;
   border-left: 1px solid #e1e1e1;
   margin-left: unset; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .sidebar-uni {
       margin-left: -4rem;
       margin-top: 3rem; } }
@@ -885,7 +902,7 @@ div.wpcf7-mail-sent-ok {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .sidebar-uni .widget-area {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -898,9 +915,9 @@ div.wpcf7-mail-sent-ok {
       margin-left: 3rem;
       margin-top: 2rem; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 480px) {
   .main-journal-section {
-    max-width: 800px;
+    max-width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -908,11 +925,24 @@ div.wpcf7-mail-sent-ok {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
+    .main-journal-section {
+      max-width: 800px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .entry-content-journal p {
   max-width: 365px;
   margin: auto; }
-  @media (min-width: 1000px) {
+  @media (min-width: 480px) {
+    .entry-content-journal p {
+      max-width: 695px; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
     .entry-content-journal p {
       max-width: 795px; } }
 
@@ -974,7 +1004,7 @@ object {
 @media (min-width: 480px) {
   iframe {
     width: 700px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     iframe {
       width: 700px; } }
 
@@ -1043,9 +1073,9 @@ object {
               align-items: center;
       text-transform: uppercase;
       border-bottom: 1px solid #e1e1e11b;
-      height: 2.5rem;
+      height: 4rem;
       z-index: 3; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1071,7 +1101,7 @@ object {
     .page-id-9 .menu-main-menu-container {
       margin-left: unset;
       margin-top: unset; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .home .menu-main-menu-container,
     .page-id-9 .menu-main-menu-container {
       margin-left: unset;
@@ -1082,7 +1112,11 @@ object {
 .page-id-11 .menu-main-menu-container,
 .page-id-166 .menu-main-menu-container,
 .page-id-235 .menu-main-menu-container,
-.search-results .menu-main-menu-container {
+.search-results .menu-main-menu-container,
+.search-no-results .menu-main-menu-container,
+.error404 .menu-main-menu-container,
+.post-type-archive .menu-main-menu-container,
+.single-tribe_events .menu-main-menu-container {
   margin-top: 0.75rem;
   width: 180%;
   margin-left: -1rem; }
@@ -1092,17 +1126,25 @@ object {
     .page-id-11 .menu-main-menu-container,
     .page-id-166 .menu-main-menu-container,
     .page-id-235 .menu-main-menu-container,
-    .search-results .menu-main-menu-container {
+    .search-results .menu-main-menu-container,
+    .search-no-results .menu-main-menu-container,
+    .error404 .menu-main-menu-container,
+    .post-type-archive .menu-main-menu-container,
+    .single-tribe_events .menu-main-menu-container {
       margin-left: unset;
       margin-top: unset;
       width: 210%; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .blog .menu-main-menu-container,
     .single-post .menu-main-menu-container,
     .page-id-11 .menu-main-menu-container,
     .page-id-166 .menu-main-menu-container,
     .page-id-235 .menu-main-menu-container,
-    .search-results .menu-main-menu-container {
+    .search-results .menu-main-menu-container,
+    .search-no-results .menu-main-menu-container,
+    .error404 .menu-main-menu-container,
+    .post-type-archive .menu-main-menu-container,
+    .single-tribe_events .menu-main-menu-container {
       margin-left: unset;
       margin-top: unset; } }
 
@@ -1127,7 +1169,7 @@ object {
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .menu-main-menu-container ul li {
       line-height: unset;
       font-size: 1rem;
@@ -1157,7 +1199,7 @@ object {
           -ms-flex-pack: unset;
               justify-content: unset;
       width: unset; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .nav-menu {
       display: unset;
       -webkit-box-pack: unset;
@@ -1209,7 +1251,7 @@ object {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .only_searchform {
       margin: 0 2rem 0 auto;
       -webkit-box-pack: center;
@@ -1238,7 +1280,7 @@ object {
   @media (min-width: 480px) {
     .icon-search {
       font-size: 1rem; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .icon-search {
       font-size: 1rem; } }
 
@@ -1253,7 +1295,7 @@ fieldset {
   @media (min-width: 480px) {
     fieldset {
       padding-top: 0.5rem; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     fieldset {
       padding-top: 0.5rem; } }
 
@@ -1332,7 +1374,7 @@ fieldset {
   @media (min-width: 480px) {
     .text-logo {
       width: 14rem; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .text-logo {
       width: 17rem; } }
 
@@ -1345,7 +1387,7 @@ fieldset {
   color: white;
   font-size: 1rem; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .icons-wrapper {
     font-size: 1.5rem; } }
 
@@ -1359,7 +1401,7 @@ fieldset {
   @media (min-width: 480px) {
     .contact {
       margin-left: unset; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .contact {
       margin-left: unset; } }
 
@@ -1377,7 +1419,7 @@ fieldset {
                 justify-content: center;
         color: white;
         font-size: 2rem; } }
-    @media (min-width: 480px) and (min-width: 1000px) {
+    @media (min-width: 480px) and (min-width: 1200px) {
       .bussiness-hours .fa-calendar-alt .fa-calendar-alt {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1405,7 +1447,7 @@ fieldset {
   @media (min-width: 480px) {
     .logo-full-front {
       width: 42%; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .logo-full-front {
       width: 42%; } }
 
@@ -1426,7 +1468,7 @@ fieldset {
       margin-bottom: 3.75rem;
       font-size: 2.4rem;
       letter-spacing: 0.25rem; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .selected-posts h2 {
       margin-bottom: 3.75rem;
       font-size: 2.4rem;
@@ -1445,7 +1487,7 @@ fieldset {
   @media (min-width: 480px) {
     .selected-posts-front-page {
       max-width: 550px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .selected-posts-front-page {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1460,7 +1502,7 @@ fieldset {
       width: 93%;
       margin: auto; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .wrapper_thumbnail_front_page {
     margin-top: 1rem; } }
 
@@ -1477,7 +1519,7 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .post-image {
       margin-top: unset; } }
 
@@ -1526,7 +1568,7 @@ fieldset {
   @media (min-width: 480px) {
     .canoe-girl-nature {
       max-width: 550px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .canoe-girl-nature {
       max-width: unset;
       margin: unset; } }
@@ -1543,7 +1585,7 @@ fieldset {
           justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .description-grid h2 {
       font-size: 2.4rem;
       letter-spacing: 0.25rem; } }
@@ -1560,7 +1602,7 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .grid-container-nature {
       width: 1200px;
       margin-left: auto;
@@ -1577,7 +1619,7 @@ fieldset {
 .hills-pcs,
 .fire-beach-pcs {
   border-radius: 15px; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .canoe-direct,
     .stars-pct,
     .hills-pcs,
@@ -1593,15 +1635,15 @@ fieldset {
   max-width: 100%;
   max-height: 100%; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .canoe-girl {
     grid-area: canoe-girl; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .beach-fire {
     grid-area: beach-fire; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hills {
     grid-area: hills;
     display: -webkit-box;
@@ -1611,7 +1653,7 @@ fieldset {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .sky {
     grid-area: sky; } }
 
@@ -1629,7 +1671,7 @@ fieldset {
   z-index: 2;
   margin-left: 2rem;
   margin-top: 2rem; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .canoe-text,
     .beach-text,
     .hills-text,
@@ -1637,7 +1679,7 @@ fieldset {
       font-size: 42px;
       width: 29rem; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hills-text {
     margin-left: 0rem; } }
 
@@ -1684,20 +1726,20 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .weather-widget {
       display: block;
       text-align: center; } }
 
 .ikona {
   margin: auto; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .ikona {
       margin: unset; } }
 
 .descript {
   display: none; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .descript {
       display: block; } }
 
@@ -1706,7 +1748,7 @@ button {
 
 .temp-descript {
   margin: 1rem; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .temp-descript {
       margin-top: -2rem; } }
 
@@ -1735,7 +1777,7 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 2rem; }
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       .page-about .entry-content h2 {
         max-width: 800px; } }
   .page-about .entry-content h2 {
@@ -1763,7 +1805,7 @@ button {
       -webkit-box-direction: unset;
           -ms-flex-direction: unset;
               flex-direction: unset; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .has-text-align-left {
       text-align: unset;
       -webkit-box-orient: unset;
@@ -1789,7 +1831,7 @@ button {
   @media (min-width: 480px) {
     .journal-hockey-picture img {
       width: 691px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .journal-hockey-picture img {
       width: 791px;
       margin: unset; } }
@@ -1826,7 +1868,7 @@ button {
   @media (min-width: 480px) {
     .journal-entry-title {
       display: block; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .journal-entry-title {
       display: block; } }
 
@@ -1839,7 +1881,7 @@ button {
   font-size: 1.5rem;
   color: white;
   padding: 0.75rem 1.5rem; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .journal-entry-title a,
     .journal-single-entry-title {
       font-size: 2.1rem;
@@ -1856,7 +1898,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 480px) {
     .entry-content-journal {
       display: unset;
       -webkit-box-orient: unset;
@@ -1867,6 +1909,17 @@ button {
       .entry-content-journal p {
         margin-top: 1rem;
         margin-bottom: 2rem; } }
+    @media (min-width: 480px) and (min-width: 1200px) {
+      .entry-content-journal p {
+        display: unset;
+        -webkit-box-orient: unset;
+        -webkit-box-direction: unset;
+            -ms-flex-direction: unset;
+                flex-direction: unset;
+        text-align: unset; }
+        .entry-content-journal p p {
+          margin-top: 1rem;
+          margin-bottom: 2rem; } }
 
 .button-journal {
   color: black; }
@@ -1890,7 +1943,7 @@ button {
     .nav-previous a:hover {
       background-color: white;
       color: #647874; }
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       .journal_page_button a,
       .nav-next a,
       .nav-previous a {
@@ -1909,7 +1962,7 @@ button {
     .front_page_button a:hover {
       background-color: #647874;
       color: white; }
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
       .front_page_button a {
         padding: 0.5rem; } }
 
@@ -1922,7 +1975,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .single-post .entry-content {
       display: unset;
       text-align: unset;
@@ -1944,9 +1997,8 @@ button {
   margin-right: 1rem; }
   @media (min-width: 480px) {
     .page-find-us {
-      margin-left: 0;
-      margin-right: 0; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+      margin: auto; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
     .page-find-us {
       margin-left: 0;
       margin-right: 0; } }
@@ -1961,8 +2013,8 @@ button {
   text-transform: uppercase; }
   @media (min-width: 480px) {
     .page-find-us .entry-title {
-      width: 56%; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+      width: 100%; } }
+  @media (min-width: 480px) and (min-width: 1200px) {
     .page-find-us .entry-title {
       width: 56%; } }
 
@@ -1981,7 +2033,7 @@ button {
   @media (min-width: 480px) {
     .page-find-us .entry-content {
       max-width: 800px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .page-find-us .entry-content {
       max-width: 800px; } }
 
@@ -2028,7 +2080,7 @@ label {
   @media (min-width: 480px) {
     .product-grid-archive {
       max-width: 700px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .product-grid-archive {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -2036,7 +2088,7 @@ label {
       max-width: 1100px;
       margin-bottom: 2rem; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mobile-svg {
     cursor: pointer;
     -webkit-transition: -webkit-transform 0.25s ease;
@@ -2044,7 +2096,7 @@ label {
     transition: transform 0.25s ease;
     transition: transform 0.25s ease, -webkit-transform 0.25s ease; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mobile-svg:hover {
     -webkit-transform: scale(2);
     /* or some other value */
@@ -2065,7 +2117,7 @@ label {
 .single-tribe_events .fa-search {
   color: #647874; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .tribe-clearfix,
   #tribe-events-content {
     padding-top: 3rem; } }
@@ -2073,7 +2125,7 @@ label {
 @media (min-width: 480px) {
   .search-results .journal-selection {
     max-width: 700px; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .search-results .journal-selection {
       max-width: 800px; } }
 
@@ -2086,7 +2138,7 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     .page-results {
       display: block;
       text-align: start; } }
@@ -2115,7 +2167,7 @@ label {
       margin-top: 4rem;
       margin-bottom: 4rem;
       line-height: 3rem; } }
-  @media (min-width: 480px) and (min-width: 1000px) {
+  @media (min-width: 480px) and (min-width: 1200px) {
     .error404 {
       margin-top: 4rem;
       margin-bottom: 4rem;

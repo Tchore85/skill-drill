@@ -87,13 +87,22 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  @include desktop {
+  @include tablet {
     display: unset;
     flex-direction: unset;
     text-align: unset;
     p {
       margin-top: 1rem;
       margin-bottom: 2rem;
+      @include desktop {
+        display: unset;
+        flex-direction: unset;
+        text-align: unset;
+        p {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
     }
   }
 }

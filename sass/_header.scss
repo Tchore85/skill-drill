@@ -10,7 +10,7 @@
     text-transform: uppercase;
 
     border-bottom: 1px solid #e1e1e11b;
-    height: 2.5rem;
+    height: 4rem;
     z-index: 3;
 
     @include desktop {
@@ -46,7 +46,11 @@
 .page-id-11,
 .page-id-166,
 .page-id-235,
-.search-results {
+.search-results,
+.search-no-results,
+.error404,
+.post-type-archive,
+.single-tribe_events {
   .menu-main-menu-container {
     margin-top: 0.75rem;
     width: 180%;

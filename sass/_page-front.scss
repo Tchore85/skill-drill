@@ -272,11 +272,13 @@ button {
 
 .weather-widget {
   display: flex;
+
   @include desktop {
     display: block;
     text-align: center;
   }
 }
+
 .ikona {
   margin: auto;
   @include desktop {
@@ -286,6 +288,7 @@ button {
 
 .descript {
   display: none;
+
   @include desktop {
     display: block;
   }
