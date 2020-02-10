@@ -1,8 +1,10 @@
 # Skill Drill
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress custome theme for Skill Drill Hockey Training Company
 
-## Installation
+## Screenshot
+
+<img src="./images/screenshot1.png" />
 
 ### 1. Download me (don't clone me!)
 
