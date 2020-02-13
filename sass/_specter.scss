@@ -1,0 +1,65 @@
+.page-specter {
+  .hentry {
+    margin: 0 0 0rem;
+  }
+}
+
+.page-specter {
+  .entry-title {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    display: none;
+
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.page-specter {
+  .entry-content {
+    // padding-top: 3rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Novecento Sans Web', sans-serif;
+    // font-family: 'Merriweather Web', serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}
+
+.page-specter {
+  .logo-full {
+    top: 36%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      font-size: 1.5rem;
+      @include desktop {
+        font-size: 2.813rem;
+      }
+    }
+  }
+}
+
+.page-specter {
+  .logo-full {
+    @include desktop {
+      top: 35%;
+    }
+  }
+}

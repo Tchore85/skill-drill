@@ -104,7 +104,7 @@ get_header(); ?>
 
                     <div class="beach-fire">
   
-                        <a href="home" class="beach-text">Neueste Technologie <br><button type="button">Read More</button></a>
+                        <a href="specter" class="beach-text">Neueste Technologie <br><button type="button">Read More</button></a>
                            <img class="fire-beach-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/specter/specter-1.jpg" alt="specter-hockey" />
 
                     </div>
