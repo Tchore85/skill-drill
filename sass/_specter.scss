@@ -28,7 +28,7 @@
     align-self: center;
     max-width: 100%;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   p {
     margin-bottom: 1.5rem;
@@ -42,7 +42,7 @@
 
 .page-specter {
   .logo-full {
-    top: 36%;
+    top: 32%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
     h3 {
       font-size: 1.5rem;
       @include desktop {
-        font-size: 2.813rem;
+        font-size: 2rem;
       }
     }
   }
@@ -59,7 +59,7 @@
 .page-specter {
   .logo-full {
     @include desktop {
-      top: 35%;
+      top: 36%;
     }
   }
 }

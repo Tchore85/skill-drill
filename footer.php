@@ -62,10 +62,11 @@
 </div>
 				<div class="site-info">
 					<div class= "copyright">
-					Copyright © 2020 Skill Drill Fun 
+					Copyright © <?php echo date("F Y"); ?> Skill Drill Fun 
 				</div>
 				<div class= "copyright_michal">
-				Page Design by Michal Prokop
+				<a href="mailto:prokopko1@gmail.com">
+				Web Development by Michal Prokop</a>
 				</div>
 				</div>
 				</div>

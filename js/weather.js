@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       $('#results').append(
         `<img class="ikona" src="http://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png"/>
         <div class="temp-descript"> <p class="descript"> ${results.weather[0].description}</p>
-          <p> ${results.main.temp}˚C</p></div>`
+          <p>${results.main.temp}˚C</p></div>`
       );
     });
   };

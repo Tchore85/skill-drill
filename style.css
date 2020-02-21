@@ -1442,6 +1442,10 @@ fieldset {
         color: white;
         font-size: 2rem; } }
 
+.copyright_michal a {
+  text-decoration: none;
+  color: white; }
+
 .logo-full {
   position: absolute;
   top: 50%;
@@ -1825,6 +1829,9 @@ button {
           -ms-flex-direction: unset;
               flex-direction: unset; } }
 
+.page-about .entry-content p {
+  margin-top: 1.5rem; }
+
 .blog .main-navigation,
 .single-post .main-navigation,
 .page-id-11 .main-navigation,
@@ -1997,7 +2004,10 @@ button {
       text-align: unset; } }
 
 .single-post .entry-content h2 {
-  color: #647874; }
+  font-size: 1.2rem;
+  color: #647874;
+  text-transform: uppercase;
+  font-weight: 100; }
 
 .page-id-11 .entry-header {
   display: -webkit-box;
@@ -2031,7 +2041,7 @@ button {
       width: 100%; } }
   @media (min-width: 480px) and (min-width: 1200px) {
     .page-find-us .entry-title {
-      width: 56%; } }
+      width: 66%; } }
 
 .page-id-11 .icon-search {
   color: #647874; }
@@ -2221,7 +2231,7 @@ label {
       align-self: center;
   max-width: 100%;
   width: 100%;
-  margin-top: 4rem; }
+  margin-top: 2rem; }
 
 .page-specter p {
   margin-bottom: 1.5rem;
@@ -2231,7 +2241,7 @@ label {
   font-size: 1rem; }
 
 .page-specter .logo-full {
-  top: 36%;
+  top: 32%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2243,8 +2253,8 @@ label {
     font-size: 1.5rem; }
     @media (min-width: 1200px) {
       .page-specter .logo-full h3 {
-        font-size: 2.813rem; } }
+        font-size: 2rem; } }
 
 @media (min-width: 1200px) {
   .page-specter .logo-full {
-    top: 35%; } }
+    top: 36%; } }
