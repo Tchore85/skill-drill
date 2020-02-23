@@ -98,7 +98,7 @@ get_header(); ?>
                   <div class="canoe-girl">
   
                     <a href="events" class="canoe-text">Hockey Training<br> <button type="button">Read More</button></a> 
-                      <img class="canoe-direct"  src="<?php echo get_stylesheet_directory_uri();?>/images/kalendar4.jpg" alt="kalendar" />
+                      <img class="canoe-direct"  src="<?php echo get_stylesheet_directory_uri();?>/images/kalendar4.png" alt="kalendar" />
       
                   </div>
 
