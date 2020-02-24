@@ -45,15 +45,22 @@
   justify-content: center;
   text-transform: uppercase;
   color: white;
+  font-size: 0.7rem;
+  @include desktop {
+    font-size: 1rem;
+  }
 }
 .copyright_michal {
   display: flex;
   justify-content: center;
   text-transform: capitalize;
-  font-size: 13px;
+  font-size: 0.7rem;
   font-family: 'Merriweather Web', serif;
   color: white;
   padding: 0.5rem 0;
+  @include desktop {
+    font-size: 0.9rem;
+  }
 }
 
 .a-footer a {

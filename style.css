@@ -744,7 +744,7 @@ div.wpcf7-mail-sent-ok {
   position: absolute;
   position: fixed;
   z-index: 3;
-  padding-top: 0.5rem; }
+  padding-top: 0.75rem; }
   @media (min-width: 480px) {
     .hamburger_menu {
       width: unset;
@@ -1359,7 +1359,11 @@ fieldset {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  font-size: 0.7rem; }
+  @media (min-width: 1200px) {
+    .copyright {
+      font-size: 1rem; } }
 
 .copyright_michal {
   display: -webkit-box;
@@ -1369,10 +1373,13 @@ fieldset {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: capitalize;
-  font-size: 13px;
+  font-size: 0.7rem;
   font-family: 'Merriweather Web', serif;
   color: white;
   padding: 0.5rem 0; }
+  @media (min-width: 1200px) {
+    .copyright_michal {
+      font-size: 0.9rem; } }
 
 .a-footer a {
   color: white;
@@ -1960,7 +1967,7 @@ button {
   .nav-previous a {
     border: solid 1px #647874;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     background-color: #647874; }
