@@ -1482,7 +1482,7 @@ fieldset {
   font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: unset;
-  margin-top: 3.75rem;
+  margin-top: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1493,10 +1493,12 @@ fieldset {
   @media (min-width: 480px) {
     .selected-posts h2 {
       margin-bottom: 3.75rem;
+      margin-top: 3.75rem;
       font-size: 2.4rem;
       letter-spacing: 0.25rem; } }
   @media (min-width: 480px) and (min-width: 1200px) {
     .selected-posts h2 {
+      margin-top: 3.75rem;
       margin-bottom: 3.75rem;
       font-size: 2.4rem;
       letter-spacing: 0.25rem; } }
