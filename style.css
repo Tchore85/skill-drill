@@ -1330,6 +1330,9 @@ fieldset {
   color: white;
   height: 18rem;
   padding-top: 2rem; }
+  @media (min-width: 1200px) {
+    .footer-blocks-container {
+      padding-top: 4rem; } }
 
 .text-footer h3 {
   color: #d99054;
@@ -1388,7 +1391,8 @@ fieldset {
       width: 14rem; } }
   @media (min-width: 480px) and (min-width: 1200px) {
     .text-logo {
-      width: 17rem; } }
+      width: 17rem;
+      padding-top: 0rem; } }
 
 @media (min-width: 480px) {
   .icons-wrapper {
@@ -2041,7 +2045,7 @@ button {
       width: 100%; } }
   @media (min-width: 480px) and (min-width: 1200px) {
     .page-find-us .entry-title {
-      width: 66%; } }
+      width: 74%; } }
 
 .page-id-11 .icon-search {
   color: #647874; }
@@ -2257,4 +2261,4 @@ label {
 
 @media (min-width: 1200px) {
   .page-specter .logo-full {
-    top: 36%; } }
+    top: 45%; } }
